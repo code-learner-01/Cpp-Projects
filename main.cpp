@@ -3,13 +3,12 @@
 * Date: July 17, 2017
 * Description: This program generates a Menu, then creates a List 
 * and prompts the user to add Item objects to it.
-*
 *********************************************************************/
 #include "List.hpp"
 
 int main()
 {
-	std::cout << "Welcome to Grocery_List_v1.5" << std::endl << std::endl;
+	std::cout << "Welcome to Grocery List Simulator" << std::endl << std::endl;
 	std::cout << "Please choose from the menu options below." << std::endl << std::endl;
 
 	// Variables for user input
