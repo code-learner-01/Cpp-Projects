@@ -15,17 +15,17 @@ int getInt(int *input)
 		int nonNumber = 0;
 		getline(std::cin, inputString);
 		
-		for (int i = 0; i < inputString.size(); i++) // For all characters...
+		for (int i = 0; i < inputString.size(); i++) 				// For all characters...
 		{
-			if (!isdigit(inputString[i])) // If ANY character is NOT a digit...
+			if (!isdigit(inputString[i])) 										// If any character is not a digit...
 			{
-				if (inputString[0] == '-') // If the first character is a negative sign...
+				if (inputString[0] == '-') 											// If the first character is a negative sign...
 				{
-					for (int j = 1; j < inputString.size(); j++) // For all remaining characters... 
+					for (int j = 1; j < inputString.size(); j++) 	// For all remaining characters... 
 					{
-						if (!isdigit(inputString[j])) // If ANY are NOT digits...
+						if (!isdigit(inputString[j])) 							// If any are not digits...
 						{   
-							nonNumber++;  // the string is NOT a valid integer
+							nonNumber++;  														// the string is not a valid integer.
 						}
 					}
 				}
@@ -58,7 +58,7 @@ int getInt(int *input)
 
 	*input = std::stoi(inputString);
 	
-	return 0; // is it better to pass the variable by reference or return the value from the function?
+	return 0;
 }
 
 
@@ -101,7 +101,7 @@ double getDouble(double *input)
 			}
 
 			if (!isdigit(inputString[i]) && !isalpha(inputString[i] && (inputString[i] != ' ') 
-				                         && (inputString[i] != '.') && (inputString[i] != '-'))) // Don't know why this isn't ignoring decimals and spaces
+				                         && (inputString[i] != '.') && (inputString[i] != '-')))
 			{
 				symbols++;
 			}

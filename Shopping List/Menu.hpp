@@ -10,7 +10,6 @@ private:
 
 public:
 	void add(Selection*);
-	// void removeSelection(Selection* selectionIn); any need for this?
 	void displayMenu();
 	void makeChoice();
 	void makeCustomChoice(int min, int max);
